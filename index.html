@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+ <html lang="de">
+ <head>
+ <title>Geometry</title>
+ <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+ <link rel="stylesheet" href="style.css" type="text/css" />
+ <link rel="stylesheet" href="reset.css" type="text/css" />
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+ </head>
+
+ <body>
+
+ <div id="container">
+    <div class="geometry_wrapper">
+        <div class="geometry_menu">
+            <form action="">
+                <label for="">Rechteck</label>
+                <input type="radio" name="form" value="square" class="form_input" checked>
+                <label for="">Dreieck</label>
+                <input type="radio" name="form" value="triangle" class="form_input"> 
+                <label for="">Kreis</label>
+                <input type="radio" name="form" value="circle" class="form_input">
+            </form>
+        </div>
+        <div class="geometry_content">
+            <div class="geometry_content_column geometry_content_column_left">
+                <div class="geometry_content_column_form_wrapper">
+                    <div class="geometry_content_column_form">
+                        <div class="square"></div>
+                        <span class="length">a</span>
+                        <span class="height">b</span>
+                    </div>
+                    
+                    <p class="form_name"></p>
+                    <p class="form_funktion"></p>
+                </div>
+            </div>
+            <div class="geometry_content_column geometry_content_column_middle">
+                <form action="">
+                    <div>
+                        <label for="">a</label>
+                        <input type="text" id="length">
+                    </div>
+                    <div>
+                        <label for="">b</label>
+                        <input type="text" id="height">
+                    </div>
+                    <div>
+                        <label for="">r</label>
+                        <input type="text" id="result">
+                    </div>
+                </form>
+            </div>
+            <div class="geometry_content_column geometry_content_column_right">
+                <form action="">
+                    <input type="radio" id="area" name="funktion" checked oninput="square_area()">
+                    <label for="">Fläche</label>
+                    <br>
+                    <input type="radio" id="perimeter" name="funktion" oninput="square_area()">
+                    <label for="">Umgang</label>
+                </form>
+            </div>
+        </div>
+        <div class="geometry_footer">
+
+        </div>
+    </div>
+</div>
+    <script src="geometry.js"></script>
+</body>

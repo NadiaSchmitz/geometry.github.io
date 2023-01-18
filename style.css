@@ -1,0 +1,85 @@
+#container {
+    min-height: calc(100vH);
+    font-family: Roboto;
+    background-color: #e5ded5;
+    padding: 200px 0 0 0;
+}
+
+.geometry_wrapper {
+    box-sizing: border-box;
+    width: 700px;
+    height: 450px;
+    background-color: #ffffff;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.geometry_menu {
+    text-align: center;
+    margin: 0 0 40px 0;
+}
+
+.geometry_menu label {
+    margin: 0 0 0 30px;
+}
+
+.geometry_menu label:first-of-type {
+    margin: 0;
+}
+
+.geometry_content_column {
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+    width: 32.5%;
+}
+
+.geometry_content_column_form_wrapper {
+    position: relative;
+    padding: 15px;
+}
+
+.square {
+    width: 180px;
+    height: 140px;
+    background-color: #e19f88;
+}
+
+.length,
+.height {
+    position: absolute;
+}
+
+.length {
+    left: 87px;
+}
+
+.height {
+    left: 0;
+    bottom: 67px;
+}
+
+.geometry_content_column_middle,
+.geometry_content_column_right {
+    padding: 20px;
+} 
+
+.geometry_content_column_middle form div {
+    margin: 0 0 10px 0;
+}
+
+.geometry_content_column_middle form label {
+    display: inline-block;
+    width: 30px;
+}
+
+.geometry_content_column_middle form input {
+    width: 100px;
+    height: 25px;
+    outline: none;
+}
+
+.geometry_content_column_right label:first-of-type {
+    display: inline-block;
+    margin: 0 0 10px 0;
+}
